@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Una palabra al día</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="contenedor">
+        <header>
+            <h1>Una palabra al día</h1>
+            <p>para mi kochana</p>
+        </header>
+
+        <section class="tarjeta">
+            <p id="fecha" class="fecha"></p>
+
+            <div class="palabra-con-audio">
+                <h2 id="palabra">Cargando...</h2>
+                <button id="escuchar" type="button"
+                    aria-label="Escuchar pronunciación"
+                    title="Escuchar pronunciación">
+                    🔊
+                </button>
+            </div>
+
+            <p id="categoria" class="categoria"></p>
+            <div id="acepciones"></div>
+        </section>
+
+        <footer>
+            Mi Aguita c:
+        </footer>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
