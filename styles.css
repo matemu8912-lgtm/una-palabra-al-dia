@@ -1,0 +1,241 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f3f0e9;
+    color: #292820;
+    font-family: 'DM Sans', sans-serif;
+    min-height: 100vh;
+    padding: 50px 20px;
+}
+
+.contenedor {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #858174;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.tarjeta {
+    background: #fffefa;
+    border: 1px solid #e8e3d8;
+    border-radius: 14px;
+    padding: 45px;
+    box-shadow: 0 12px 35px rgba(50, 45, 30, 0.05);
+}
+
+.fecha {
+    color: #9a927f;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+#palabra {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 600;
+    color: #3e5143;
+    margin-bottom: 10px;
+}
+
+.categoria {
+    display: inline-block;
+    color: #7b755f;
+    background: #f1eee5;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-bottom: 35px;
+}
+
+.seccion {
+    border-top: 1px solid #ece8df;
+    padding: 25px 0;
+}
+
+.seccion h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #3e5143;
+    margin-bottom: 12px;
+}
+
+.seccion h4 {
+    color: #8b806b;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 20px 0 8px;
+}
+
+.seccion p {
+    color: #625f56;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.seccion p + p {
+    margin-top: 8px;
+}
+
+footer {
+    text-align: center;
+    color: #a19b8e;
+    font-size: 12px;
+    margin-top: 35px;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 30px 15px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    .tarjeta {
+        padding: 28px 22px;
+    }
+
+    #palabra {
+        font-size: 38px;
+    }
+}
+
+
+.palabra-con-audio h2 {
+    margin-bottom: 0;
+}
+
+#escuchar {
+    border: none;
+    background: #f1eee5;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.2s, transform 0.2s;
+}
+
+#escuchar:hover {
+    background: #e4dfd1;
+    transform: scale(1.08);
+}
+#favorito {
+    border: none;
+    background: #f1eee5;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    font-size: 25px;
+    color: #9b655e;
+    transition: 0.2s;
+}
+
+#favorito:hover {
+    background: #e8ded8;
+    transform: scale(1.08);
+}
+
+#favorito.activo {
+    color: #b94d55;
+}
+
+.favoritos {
+    margin-top: 25px;
+}
+
+.favoritos h2 {
+    font-family: 'Playfair Display', serif;
+    color: #3e5143;
+    margin-bottom: 20px;
+}
+
+.palabra-guardada {
+    padding: 15px 0;
+    border-top: 1px solid #ece8df;
+}
+
+.palabra-guardada strong {
+    font-family: 'Playfair Display', serif;
+    font-size: 19px;
+    color: #3e5143;
+}
+
+.palabra-guardada p {
+    color: #625f56;
+    font-size: 14px;
+    margin-top: 6px;
+}
+
+
+#buscar-favoritos {
+    width: 100%;
+    padding: 13px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #e8e3d8;
+    border-radius: 8px;
+    background: #fffefa;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+}
+
+#buscar-favoritos:focus {
+    border-color: #879987;
+}
+
+.favorito-acciones {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.favorito-acciones button {
+    border: 1px solid #e8e3d8;
+    background: #f3f0e9;
+    border-radius: 7px;
+    padding: 7px 12px;
+    cursor: pointer;
+    color: #3e5143;
+}
+
+.favorito-acciones button:hover {
+    background: #e8e4d9;
+}
+
+.favorito-acepcion {
+    margin-top: 12px;
+    padding-left: 12px;
+    border-left: 2px solid #e8e3d8;
+}
